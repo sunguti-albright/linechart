@@ -1,89 +1,86 @@
 .grid-container {
+  padding: 20px;
   position: relative;
-width: auto;
-height: 100%;
-
-background: #FFFFFF;
-   font-family: Poppins;
-    /* display: grid;
-    background-color:#e5e5e5;
-    padding: 40px;
-    height: 100%; */
-  }
-  .grid-item {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    font-size: 30px;
-  }
-  .item1 {
-    grid-column: 1 / span 2;
-    grid-row: 1;
-    position: absolute;
-
-
-background: #F7F8FD;
-  }
-  
-  .item2 {
-    position: absolute;
-    width: 1490px;
-    height: 814px;
-    left: 341px;
-    top: 206px;
-   
-    grid-column: 3;
-    grid-row: 1 / span 2;
-  }
-#closing-price{
-  position: absolute;
-width: 182px;
-height: 40px;
-left: 341px;
-top: 117px;
-
-background: #51459E;
-border-radius: 5px;
-
+  display: grid;
+  background: #ffffff;
+  font-family: Poppins;
 }
-#date{
-/* position: absolute;
-width: 290px;
-height: 50px;
-left: 1611px;
-top: 22px; */
-
-background: #51459E;
-border-radius: 10px;
-
+.grid-item {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
 }
-#canvas{
+.item1 {
+  grid-column: 1;
+  grid-row: 1;
+
+  background: #f7f8fd;
+}
+
+.item2 {
+  width: auto;
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+#closing-price {
+  background: #51459e;
+  border-radius: 5px;
+  padding: 7px;
+  color: #ffffff;
+  border: 0;
+  font-weight: 500;
+  left:0;
+}
+#date {
+  background: #51459e;
+  border-radius: 5px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 7px;
+  border: 0;
+  margin: 4px;
+}
+#canvas {
   background-color: #ffffff;
 }
-#nasdaq{
-font-size: 22px;
-font-weight: 600;
-line-height: 33px;
-letter-spacing: 0em;
-text-align: left;
-color: #51459E;
-
+#nasdaq {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #51459e;
 }
-#searchbar{
+#searchbar {
   font-family: Poppins;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
-  
 }
-#companies{
+#companies {
   font-family: Poppins;
-font-size: 18px;
-font-weight: 400;
-line-height: 27px;
-letter-spacing: 0em;
-text-align: left;
-
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.inner-grid {
+  display: grid;
+  padding: 10px;
+}
+.inner-grid-item {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  left: 0;
+}
+.loading {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-weight: 100;
+  color: grey;
 }

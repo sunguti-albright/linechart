@@ -14,6 +14,7 @@ export class AppComponent {
   startDate: any;
   endDate: any;
   chart: any;
+  loading: boolean = false;
 
   constructor(private service: ChartService) {
     Chart.register(...registerables);
@@ -22,6 +23,7 @@ export class AppComponent {
     this.fetchData();
   }
   fetchData() {
+    this.loading=true
     let endpoint = '/FB/data.json?api_key=nQgyfDRtAibDZAV67VSq&limit=15';
     if (this.endDate && this.startDate){
       endpoint = endpoint+'&start_date='+this.startDate+'&end_date='+this.endDate
@@ -59,6 +61,7 @@ export class AppComponent {
             ],
           },
         });
+        this.loading =false;
       });
   }
 
