@@ -1,0 +1,89 @@
+.grid-container {
+  position: relative;
+width: auto;
+height: 100%;
+
+background: #FFFFFF;
+   font-family: Poppins;
+    /* display: grid;
+    background-color:#e5e5e5;
+    padding: 40px;
+    height: 100%; */
+  }
+  .grid-item {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+  .item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    position: absolute;
+
+
+background: #F7F8FD;
+  }
+  
+  .item2 {
+    position: absolute;
+    width: 1490px;
+    height: 814px;
+    left: 341px;
+    top: 206px;
+   
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+#closing-price{
+  position: absolute;
+width: 182px;
+height: 40px;
+left: 341px;
+top: 117px;
+
+background: #51459E;
+border-radius: 5px;
+
+}
+#date{
+/* position: absolute;
+width: 290px;
+height: 50px;
+left: 1611px;
+top: 22px; */
+
+background: #51459E;
+border-radius: 10px;
+
+}
+#canvas{
+  background-color: #ffffff;
+}
+#nasdaq{
+font-size: 22px;
+font-weight: 600;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+color: #51459E;
+
+}
+#searchbar{
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+#companies{
+  font-family: Poppins;
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: left;
+
+}
