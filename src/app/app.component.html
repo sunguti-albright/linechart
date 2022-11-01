@@ -15,18 +15,26 @@
       </div>
       
        <div class="grid-item item2">
-        <div>
-          <img src="../assets/calendar3.png">
-          <input id="date" type="date" (change)="setStartDate($event)">
-          <input id="date" type="date"(change)="setEndDate($event)" >
+        <div class="">
+          <div class="">
+            <select (change)="selectPrice($event)" name="closing-price" id="closing-price">
+              <option value="4">Closing Price</option>
+              <option value="10">Adj closing price</option>
+            </select> 
+          </div>
+          <div class = "inner-grid-item">
+            <!-- <img src="../assets/calendar3.png" class="image"> -->
+            <input id="date" type="date" (change)="setStartDate($event)">
+            <input id="date" type="date"(change)="setEndDate($event)" >
+          </div>
         </div>
-
-        <select (change)="selectPrice($event)" name="closing-price" id="closing-price">
-          <option value="4">closing price</option>
-          <option value="10">Adj closing price</option>
-        </select> 
-        
-        <canvas id="canvas">{{chart}}</canvas>
+       
+        <div class="not-loading" >
+          <canvas id="canvas" >{{chart}}</canvas>
+        </div>
+        <div class="loading"*ngIf="loading">
+          Loading...please wait
+        </div>
   
        </div>
 
