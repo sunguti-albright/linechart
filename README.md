@@ -1,4 +1,7 @@
-# Linechart
+# Nasdaq Linechart
+## By Sunguti Albright
+
+## Note: Incase of bug while running, run `export NODE_OPTIONS=--openssl-legacy-provider`, then `ng serve -o`
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
 
