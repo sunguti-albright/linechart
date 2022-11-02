@@ -1,7 +1,18 @@
 # Nasdaq Linechart
-## By Sunguti Albright
+
+#### Author: [Sunguti Albright](https://github.com/sunguti-albright)
 
 ## Note: Incase of bug while running, run `export NODE_OPTIONS=--openssl-legacy-provider`, then `ng serve -o`
+
+
+## Description
+An angular application that consumes data from an api and displays it in a line graph.
+
+As a user of the web application you will be able to:
+
+1.View previous data in a line graph using starting and end date .
+2. Filter data using a start date and end date.
+3. Filter data and line graph output by adjusting the closing price in the application.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
 
